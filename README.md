@@ -9,7 +9,7 @@ OS features:
 - Memory protection
 - Cache management
 - Easy system calls
-- IO via system calls
+- IO operations via system calls with a unified IO param structure
 - IO as char devices and block devices
 - IO Blocking, Timeout Blocking, IO Blocking with Timeout
 - Task-reservable or shared IO devices
