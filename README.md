@@ -11,7 +11,9 @@ OS features:
 - Easy system calls
 - IO via system calls
 - IO as char devices and block devices
-- Lazy FPU stacking
+- IO Blocking, Timeout Blocking, IO Blocking with Timeout
+- Task-reservable or shared IO devices
+- Optional lazy FPU stacking
 - TLSF kernel memory allocator (O(1) insertion, O(1) deletion)
 - Superflexible scheduler (round-robin, fair, unfair, any combination)
 - Pipes for inter-process communication (as char devices)
@@ -20,7 +22,7 @@ OS features:
 Existing example on STM32F746 Discovery board includes:
 - UART1 as char device
 - Pipe0 as char device
-- QSPI Flash in QSPI DDR XIP (no instruction) mode for reading, indirect write for erase/write
+- QSPI Flash in QSPI DDR XIP (no instruction phase) memory-mapped mode for reading, indirect write for erase/write
 - Task without FPU, task with lazy stacking FPU
 
 
