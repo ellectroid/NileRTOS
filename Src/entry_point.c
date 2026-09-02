@@ -1,8 +1,6 @@
 #include "mcu_reset_init.h"
 #include "app/startup.h"
 
-#include "nile/mcu/stm32f746/io_dev/quadspi.h"
-
 int main(void) {
 
 	uint32_t init_ok = 0;
